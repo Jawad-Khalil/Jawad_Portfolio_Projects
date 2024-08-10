@@ -35,6 +35,7 @@ header h1 {
 .menu-btn:hover {
   background-color: #2980b9;
 }
+
 .nav-list {
   list-style: none;
   margin: 0;
@@ -97,6 +98,7 @@ header h1 {
 .nav-list li:hover::before {
   color: white; /* Ensure the number remains visible on hover */
 }
+
 .welcome {
   padding: 10px;
   max-width: 1100px;
@@ -141,6 +143,7 @@ header h1 {
   padding: 20px;
   max-width: 1250px;
   margin: 0 auto;
+  counter-reset: project-counter; /* Set up the counter for the project headings */
 }
 
 /* Responsive adjustments */
@@ -166,6 +169,16 @@ header h1 {
   color: #3498db;
   margin-top: 0;
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+/* Set up the counter for the project headings */
+.project h2::before {
+  counter-increment: project-counter;
+  content: counter(project-counter) ". ";
+  font-weight: bold;
+  margin-right: 1px;
+  color: #3498db; /* Optional: Change the color of the numbering */
+  display: inline; /* Ensure the counter is inline with the text */
 }
 
 /* Style for each section within the project */
