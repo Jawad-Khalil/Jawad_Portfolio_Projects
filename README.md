@@ -32,10 +32,10 @@ You can view my Projects Page by visiting [**here**](https://jawad-khalil.github
 ## Screenshots
 Here are  screenshots of my portfolio to give you a visual idea of what it looks like:
 
-![Portfolio HTML]()
-![Portfolio Top]()
-![Portfolio Top]()
-![Portfolio JavaScript]()
+![Projects top HTML](https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/HTML,_CSS,_and_JavaScript/Projects_Page/Projects_HTML_top.PNG?raw=true)
+![Projects top Preview](https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/HTML,_CSS,_and_JavaScript/Projects_Page/Projects_top.PNG?raw=true)
+![Projects JavaScript](https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/HTML,_CSS,_and_JavaScript/Projects_Page/Projects_JavaScript.PNG?raw=true)
+![Project 1](https://github.com/Jawad-Khalil/Jawad_Khalil_Portfolio/blob/main/Projects/HTML,_CSS,_and_JavaScript/Projects_Page/Projects_Project1.PNG?raw=true)
 
 
 ## Acknowledgements
