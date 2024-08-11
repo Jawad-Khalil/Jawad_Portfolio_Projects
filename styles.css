@@ -48,7 +48,7 @@ header h1 {
   right: auto;
   left: 50%;
   transform: translateX(-50%);
-  width: 330px;
+  width: 340px;
   box-shadow: 0 9px 9px rgba(0, 0, 0, 0.2);
   text-align: left;
   counter-reset: nav-counter;
@@ -163,6 +163,12 @@ header h1 {
   /* Double border effect */
   outline: 1px solid #2ecc71; /* Outer border */
   outline-offset: 4px; /* Adjust spacing between borders */
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    padding: 10px;
+  }
 }
 
 .project h2 {
