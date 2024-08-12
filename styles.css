@@ -1,373 +1,483 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styles */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
+  line-height: 1.6;
+  background-color: white;
 }
 
+.container h1 {
+  margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+/* Header styles */
 header {
-  background-color: #3498db;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  position: relative;
-}
-header h1 {
-  margin-bottom: 10px;
+  background-color: #333; /* Background color for the header */
+  color: white; /* Text color for the header */
+  padding: 40px 0; /* Add padding to the top and bottom */
+  text-align: center; /* Center align header content */
 }
 
-.navbar {
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 20px 0; /* Reduce padding for smaller screens */
+  }
+}
+
+.top-menu {
+  text-align: center; /* Center align the content */
+}
+
+.center {
+  display: inline-block; /* Display content inline */
+}
+
+.center h1,
+.center p {
+  margin: 0; /* Remove margin for h1 and p tags */
+}
+
+/* CSS for Menu Section */
+.menu {
+  background-color: orange; /* Background color for the menu */
+  color: #fff; /* Text color for the menu */
+  text-align: center; /* Center align the menu */
+  padding: 5px 0; /* Add padding to the top and bottom */
+}
+
+.menu a {
+  text-decoration: none; /* Remove underline from all links in the menu */
+  color: white; /* Ensure text color is readable */
+}
+
+.menu ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 3px; /* Remove default padding */
+}
+
+.menu ul li {
+  display: inline-block; /* Display menu items horizontally */
+  margin-right: 20px; /* Add space between menu items */
+}
+
+.menu ul li:last-child {
+  margin-right: 0; /* Remove margin from last menu item */
+}
+
+.menu li a:hover {
+  font-weight: bold;
+  text-decoration: underline; /* Underline only when hovered */
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* CSS for Profile Image Section */
+.profile-container {
+  position: relative;
   display: flex;
   justify-content: center;
-  position: relative;
-}
-
-.menu-btn {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 5px;
-}
-
-.menu-btn:hover {
-  background-color: #2980b9;
-}
-
-.nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: none;
-  position: absolute;
-  background-color: #2ecc71;
-  border-radius: 5px;
-  top: 50px;
-  right: auto;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 340px;
-  box-shadow: 0 9px 9px rgba(0, 0, 0, 0.2);
-  text-align: left;
-  counter-reset: nav-counter;
-}
-
-.nav-list li {
-  border-bottom: 1px solid #3498db;
-  position: relative; /* Position relative to allow absolute positioning of the link */
-  display: flex;
   align-items: center;
+  height: 50vh;
+  background-image: url("https://images.unsplash.com/photo-1495081703108-1fdad36fcb5a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
 }
 
-.nav-list li:last-child {
-  border-bottom: none;
+.profile-image {
+  position: relative;
+  z-index: 1;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 50%; /* Ensures the container is perfectly circular */
 }
 
-.nav-list li::before {
-  counter-increment: nav-counter;
-  content: counter(nav-counter) ". ";
-  font-weight: bold;
-  color: white;
-  margin-right: -7px;
-  padding: 5px;
+.profile-image img {
+  width: 100%; /* Ensures the image fills the container */
+  height: 100%; /* Ensures the image fills the container */
+  object-fit: cover; /* Ensures the image is cropped to cover the entire container */
 }
 
-.nav-list li a {
-  display: block;
-  padding: 5px;
-  color: white;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 15px;
+@media screen and (max-width: 718px) {
+  .profile-container {
+    height: 35vh; /* Adjust height for very small screens */
+  }
+
+  .profile-image {
+    width: 200px; /* Smaller width for very small screens */
+    height: 200px; /* Smaller height for very small screens */
+  }
 }
 
-.nav-list li:hover {
-  background-color: #2980b9; /* Highlight the whole line on hover */
+/* Main section styles */
+main {
+  padding: 20px;
 }
 
-.nav-list li:hover a {
-  font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+section {
+  margin-bottom: 15px;
 }
 
-.nav-list li:hover::before {
-  color: white; /* Ensure the number remains visible on hover */
+section h1 {
+  color: magenta;
+  text-decoration: underline;
+  font-size: 30px;
 }
 
-.welcome {
+section h2 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+section ul {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0px;
+  }
+
+  section h1 {
+    font-size: 25px;
+  }
+
+  section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 1px;
+  }
+}
+
+/* CSS for Scroll to Top Button */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Adjusted to right */
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  background-color: #333;
   padding: 10px;
-  max-width: 1100px;
-  margin: 0 auto;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top-btn:hover {
+  opacity: 0.7;
+}
+
+/* Paragraph styles */
+p {
+  text-align: justify;
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  flex: 0 0 17%; /* Slightly reduced width to decrease box size from the right side */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid #3498db; /* Border color */
+  border-radius: 25px; /* Rounded corners */
+  padding: 15px; /* Padding inside the box */
+  box-shadow: 0 13px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  margin-bottom: 25px;
+  margin-right: 13px;
+}
+
+@media only screen and (max-width: 767px) {
+  .skill {
+    width: 48%; /* Set width to 48% for two-column layout on smaller screens */
+    margin-right: 2%; /* Add margin between the two skill boxes */
+  }
+
+  .skill:nth-child(2n) {
+    margin-right: 0; /* Remove margin-right for the second item in each row */
+  }
+}
+
+.skill img {
+  width: 50px; /*Adjust image size as needed*/
+  height: 50px;
+  margin-top: 2px;
+  margin-bottom: 1px;
+}
+
+.skill-info {
+  text-align: left;
+  margin-bottom: 1px;
+  margin-right: 10px;
+}
+
+.skill-info h2 {
+  margin-top: 0px;
   margin-bottom: -10px;
 }
 
-.welcome h2 {
-  color: #2ecc71;
-  margin-top: 0;
+.skill-info p {
+  margin-top: 10px;
 }
 
-.welcome p {
-  text-indent: 2em; /* Adjust the value as needed */
-  font-family: sans-serif; /* Arial, Helvetica, or similar */
-  font-size: 18px; /* or 1rem */
+@media screen and (max-width: 768px) {
+  .skill {
+    flex: 0 0 48%; /* Two skills per row on smaller screens */
+  }
 }
 
-/* Scroll to Top Button */
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #3498db;
-  color: white;
-  cursor: pointer;
+/* Info Table */
+.info-table {
+  width: 100%; /* Full width for better responsiveness */
+  border-collapse: collapse;
+  font-size: 14px; /* Default font size */
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+.info-table th,
+.info-table td {
+  border: 1px solid #ddd;
   padding: 10px;
-  border-radius: 50%;
-  font-size: 18px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: none;
+  text-align: left;
 }
 
-#scrollToTopBtn:hover {
-  background-color: #2980b9;
+.info-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
 }
 
-.projects-details-section {
-  padding: 20px;
-  max-width: 1250px;
-  margin: 0 auto;
-  counter-reset: project-counter; /* Set up the counter for the project headings */
+.info-table td:nth-child(2) {
+  width: 75%; /* Adjust the width as needed */
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-  .projects-details-section {
-    padding: 10px;
+  .info-table {
+    font-size: 12px; /* Slightly smaller font size on smaller screens */
+  }
+
+  .info-table th,
+  .info-table td {
+    padding: 8px; /* Reduced padding for smaller screens */
+  }
+
+  .info-table td:nth-child(2) {
+    width: auto; /* Reset width for better fitting on small screens */
+  }
+
+  /* Optional: Add horizontal scrolling for smaller screens */
+  .info-table-wrapper {
+    overflow-x: auto; /* Allow horizontal scrolling */
   }
 }
 
-.project {
-  margin-bottom: 20px;
-  border: 1px solid #3498db;
-  padding: 15px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Double border effect */
-  outline: 1px solid #2ecc71; /* Outer border */
-  outline-offset: 4px; /* Adjust spacing between borders */
-}
-
-@media screen and (max-width: 768px) {
-  .project {
-    padding: 5px;
-  }
-}
-
-.project h2 {
-  color: #3498db;
-  margin-top: 0;
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow */
-}
-
-/* Set up the counter for the project headings */
-.project h2::before {
-  counter-increment: project-counter;
-  content: counter(project-counter) ". ";
-  font-weight: bold;
-  margin-right: 1px;
-  color: #3498db; /* Optional: Change the color of the numbering */
-  display: inline; /* Ensure the counter is inline with the text */
-}
-
-/* Style for each section within the project */
-.skills,
-.job,
-.role,
-.overview,
-.links .duration,
-.challenges,
-.client-team,
-.previews {
-  margin-top: 15px; /* Space above each section */
-}
-
-/* Style for section titles within the project */
-.skills h3,
-.job h3,
-.role h3,
-.overview h3,
-.links h3,
-.duration h3,
-.challenges h3,
-.client-team h3,
-.previews h3,
-.achievements h3 {
-  margin-bottom: 15px; /* Space below section titles */
-  color: #2ecc71; /* Red color for section titles */
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Add shadow */
-}
-
-/* Style for section text paragraphs */
-.skills p,
-.job p,
-.overview p,
-.overview li,
-.links p,
-.links li,
-.challenges p,
-.achievements li {
-  color: black; /* Dark color for section text */
-  font-weight: normal;
-}
-
-.role p,
-.client-team p,
-.duration p {
+section a {
   font-weight: bold;
 }
 
-.overview ul,
-.links ul,
-.achievements ul {
-  list-style-type: none; /* Removes default bullet points */
-  padding: 1;
-}
-
-.overview ul li,
-.links ul li,
-.achievements ul li {
-  margin: 10px 0; /* Adds space between each list item */
-}
-
-.overview ul li::before {
-  content: "\27A4"; /* Change the bullet point symbol */
-  font-size: 1em; /* Increase the size of the bullet */
-  color: #3498db; /* Custom bullet color */
-  font-weight: bold;
-  display: inline-block;
-  width: 1.5em;
-  margin-left: -1.5em; /* Positions bullet point */
-}
-
-.links ul li::before {
-  content: "\2192"; /* Change the bullet point symbol */
-  font-size: 1.2em; /* Increase the size of the bullet */
-  color: #3498db; /* Custom bullet color */
-  font-weight: bold;
-  display: inline-block;
-  width: 1.5em;
-  margin-left: -1.5em; /* Positions bullet point */
-}
-
-.achievements ul li::before {
-  content: "\2713"; /* Change the bullet point symbol */
-  font-size: 1.1em; /* Increase the size of the bullet */
-  color: #3498db; /* Custom bullet color */
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1.5em; /* Positions bullet point */
-}
-
-.challenges table {
+.education-table {
   width: 100%;
-  max-width: 1200px;
   border-collapse: collapse;
-  margin-bottom: 20px;
+  font-size: 14px; /* Default font size */
 }
 
-.challenges th,
-.challenges td {
-  border: 1.5px solid #7f8c8d;
-  padding: 8px;
+.education-table th,
+.education-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
   text-align: left;
 }
 
-.challenges th {
-  background-color: #f4f4f9;
+.education-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
 }
 
-/* Responsive styling for smaller screens */
-@media (max-width: 600px) {
-  .challenges table {
-    width: 100%; /* Ensure table fits within the viewport */
-  }
-  .challenges th,
-  .challenges td {
-    padding: 4px; /* Reduce padding */
-  }
-  .challenges th {
-    font-size: 0.9em; /* Reduce header font size */
-  }
-  .challenges td {
-    font-size: 0.8em; /* Reduce cell font size */
-  }
+.education-table th:nth-child(1),
+.education-table td:nth-child(1) {
+  width: 5%; /* Adjust the width as needed for the first column */
+  text-align: center;
 }
 
-/* Style for the skills list */
-.skills-list {
-  list-style-type: none; /* Remove default list bullets */
-  padding: 0; /* Remove default padding */
+.education-table th:nth-child(2),
+.education-table td:nth-child(2) {
+  width: 30%; /* Adjust the width as needed for the second column */
 }
 
-/* Style for each skill item */
-.skills-list li {
-  background-color: #f4f4f9; /* Light blue background */
-  display: inline-block; /* Inline display with wrapping */
-  margin: 5px; /* Space between items */
-  padding: 5px 10px; /* Padding inside each item */
-  border-radius: 15px; /* Rounded corners */
-  color: #e67e22; /* Text color */
-  font-size: 14px; /* Font size */
-  font-weight: bold; /* Bold text */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+.education-table th:nth-child(3),
+.education-table td:nth-child(3) {
+  width: 30%; /* Adjust the width as needed for the third column */
 }
 
-/* Style for project previews */
-.previews img {
-  width: 100%; /* Responsive width */
-  max-width: 600px; /* Max width for larger screens */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  margin-top: 10px; /* Space above images */
-  border: 1px solid black;
+.education-table th:nth-child(4),
+.education-table td:nth-child(4) {
+  width: 15%; /* Adjust the width as needed for the fourth column */
+  text-align: center;
 }
 
-/* Responsive adjustments for smaller screens */
+.education-table th:nth-child(5),
+.education-table td:nth-child(5) {
+  width: 20%; /* Adjust the width as needed for the fifth column */
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
-  .skills-list li {
-    margin: 3px; /* Reduced margin */
-    padding: 3px 6px; /* Reduced padding */
-    font-size: 12px; /* Smaller font size */
+  .education-table {
+    font-size: 9px; /* Smaller font size on smaller screens */
   }
 
-  .previews {
-    flex: 1 1 45%; /* Two items per row */
-    margin: 10px;
+  .education-table th,
+  .education-table td {
+    padding: 3px; /* Reduced padding for smaller screens */
   }
 
-  .previews img {
-    max-width: 100%; /* Ensure images fit on smaller screens */
-    height: auto;
+  .education-table th:nth-child(1),
+  .education-table td:nth-child(1) {
+    width: 10%; /* Adjust width for better fit on small screens */
+  }
+
+  .education-table th:nth-child(2),
+  .education-table td:nth-child(2) {
+    width: 25%; /* Adjust width for better fit on small screens */
+  }
+
+  .education-table th:nth-child(3),
+  .education-table td:nth-child(3) {
+    width: 25%; /* Adjust width for better fit on small screens */
+  }
+
+  .education-table th:nth-child(4),
+  .education-table td:nth-child(4) {
+    width: 15%; /* Adjust width for better fit on small screens */
+  }
+
+  .education-table th:nth-child(5),
+  .education-table td:nth-child(5) {
+    width: 15%; /* Adjust width for better fit on small screens */
   }
 }
 
-@media (max-width: 600px) {
-  .previews {
-    flex-direction: column; /* Stack items vertically */
-  }
+/* Certificate Table */
+.certificate-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px; /* Adjust the font size for better readability */
+}
 
-  .previews {
-    flex: 1 1 100%; /* Full width for each item */
-    margin: 5px 0;
+.certificate-table th,
+.certificate-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.certificate-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.certificate-table th:nth-child(1),
+.certificate-table td:nth-child(1) {
+  width: 10%; /* Adjust the width as needed for the first column */
+  text-align: center;
+}
+
+.certificate-table th:nth-child(2),
+.certificate-table td:nth-child(2) {
+  width: 40%; /* Adjust the width as needed for the second column */
+}
+
+.certificate-table th:nth-child(3),
+.certificate-table td:nth-child(3) {
+  width: 30%; /* Adjust the width as needed for the third column */
+  text-align: center;
+}
+
+.certificate-table th:nth-child(4),
+.certificate-table td:nth-child(4) {
+  width: 20%; /* Adjust the width as needed for the fourth column */
+}
+
+@media (max-width: 767px) {
+  .certificate-table {
+    font-size: 10px; /* Reduce font size on smaller screens */
+  }
+  .certificate-table th,
+  .certificate-table td {
+    padding: 6px; /* Reduce padding for better fit */
   }
 }
+
+/* Project styles */
+.project li {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  padding-left: 20px;
+  border: 1px solid #ff9a9e;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.project ul {
+  list-style-position: inside; /* Ensures the bullet is inside the padding */
+}
+
+.project h2 {
+  color: purple;
+}
+
+.project img {
+  width: 50px; /*Adjust image size as needed*/
+  height: 50px;
+  margin-bottom: -15px;
+}
+
+.project {
+  border: 2px solid #3498db; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  margin-bottom: 15px;
+}
+
+.footer {
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 15px 0;
+    font-size: 12px;
+  }
+}
+
