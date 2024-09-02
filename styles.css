@@ -112,9 +112,9 @@ header h1 {
 }
 
 .welcome p {
-  text-indent: 2em; /* Adjust the value as needed */
+  text-indent: 2em;
   font-family: sans-serif; /* Arial, Helvetica, or similar */
-  font-size: 18px; /* or 1rem */
+  font-size: 16px;
 }
 
 /* Scroll to Top Button */
@@ -162,7 +162,7 @@ header h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Double border effect */
   outline: 1px solid #2ecc71; /* Outer border */
-  outline-offset: 4px; /* Adjust spacing between borders */
+  outline-offset: 4px; /* spacing between borders */
 }
 
 @media screen and (max-width: 768px) {
@@ -174,7 +174,7 @@ header h1 {
 .project h2 {
   color: #3498db;
   margin-top: 0;
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow */
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); /* shadow */
 }
 
 /* Set up the counter for the project headings */
@@ -183,7 +183,7 @@ header h1 {
   content: counter(project-counter) ". ";
   font-weight: bold;
   margin-right: 1px;
-  color: #3498db; /* Optional: Change the color of the numbering */
+  color: #3498db;
   display: inline; /* Ensure the counter is inline with the text */
 }
 
@@ -212,7 +212,7 @@ header h1 {
 .achievements h3 {
   margin-bottom: 15px; /* Space below section titles */
   color: #2ecc71; /* Red color for section titles */
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Add shadow */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* shadow */
 }
 
 /* Style for section text paragraphs */
@@ -248,7 +248,7 @@ header h1 {
 }
 
 .overview ul li::before {
-  content: "\27A4"; /* Change the bullet point symbol */
+  content: "\27A4"; /* bullet point symbol */
   font-size: 1em; /* Increase the size of the bullet */
   color: #3498db; /* Custom bullet color */
   font-weight: bold;
@@ -258,8 +258,8 @@ header h1 {
 }
 
 .links ul li::before {
-  content: "\2192"; /* Change the bullet point symbol */
-  font-size: 1.2em; /* Increase the size of the bullet */
+  content: "\2192"; /* bullet point symbol */
+  font-size: 1.3em; /* size of the bullet */
   color: #3498db; /* Custom bullet color */
   font-weight: bold;
   display: inline-block;
@@ -268,8 +268,8 @@ header h1 {
 }
 
 .achievements ul li::before {
-  content: "\2713"; /* Change the bullet point symbol */
-  font-size: 1.1em; /* Increase the size of the bullet */
+  content: "\2713"; /* bullet point symbol */
+  font-size: 1.1em; /* size of the bullet */
   color: #3498db; /* Custom bullet color */
   font-weight: bold;
   display: inline-block;
@@ -298,7 +298,7 @@ header h1 {
 /* Responsive styling for smaller screens */
 @media (max-width: 600px) {
   .challenges table {
-    width: 100%; /* Ensure table fits within the viewport */
+    width: 100%; /* table fits within the viewport */
   }
   .challenges th,
   .challenges td {
@@ -314,8 +314,8 @@ header h1 {
 
 /* Style for the skills list */
 .skills-list {
-  list-style-type: none; /* Remove default list bullets */
-  padding: 0; /* Remove default padding */
+  list-style-type: none; /* Removes default list bullets */
+  padding: 0; /* Removes default padding */
 }
 
 /* Style for each skill item */
@@ -370,4 +370,10 @@ header h1 {
     flex: 1 1 100%; /* Full width for each item */
     margin: 5px 0;
   }
+}
+
+.thanks {
+  padding: 20px;
+  max-width: 1250px;
+  margin: 0 auto;
 }
