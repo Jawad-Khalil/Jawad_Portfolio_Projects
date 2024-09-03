@@ -115,6 +115,7 @@ header h1 {
   text-indent: 2em;
   font-family: sans-serif; /* Arial, Helvetica, or similar */
   font-size: 16px;
+  text-align: justify;
 }
 
 /* Scroll to Top Button */
