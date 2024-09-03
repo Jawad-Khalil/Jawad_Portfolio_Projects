@@ -118,6 +118,13 @@ header h1 {
   text-align: justify;
 }
 
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .welcome p {
+   font-size: 15px;
+  }
+}
+
 /* Scroll to Top Button */
 #scrollToTopBtn {
   position: fixed;
