@@ -381,10 +381,11 @@ header h1 {
 }
 
 .thanks {
-  padding: 20px;
   max-width: 1250px;
   margin: 0 auto;
-  margin-top: -50px;
+  margin-top: -30px;
+  margin-bottom: -5px;
+  
 }
 
 /* Footer styles */
