@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #3498db;
+  background-color: #3498db; /* Sky Blue */
   color: white;
   padding: 20px;
   text-align: center;
@@ -33,7 +33,7 @@ header h1 {
 }
 
 .menu-btn:hover {
-  background-color: #2980b9;
+  background-color: #2980b9; /* Belize Hole" (a shade of blue) */
 }
 
 .nav-list {
@@ -42,7 +42,7 @@ header h1 {
   padding: 0;
   display: none;
   position: absolute;
-  background-color: #2ecc71;
+  background-color: #2ecc71; /* Emerald Green */
   border-radius: 5px;
   top: 50px;
   right: auto;
@@ -166,7 +166,7 @@ header h1 {
   border: 1px solid #3498db;
   padding: 15px;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Double border effect */
   outline: 1px solid #2ecc71; /* Outer border */
@@ -294,7 +294,7 @@ header h1 {
 
 .challenges th,
 .challenges td {
-  border: 1.5px solid #7f8c8d;
+  border: 1.5px solid #7f8c8d; /* Gray */
   padding: 8px;
   text-align: left;
 }
@@ -333,7 +333,7 @@ header h1 {
   margin: 5px; /* Space between items */
   padding: 5px 10px; /* Padding inside each item */
   border-radius: 15px; /* Rounded corners */
-  color: #e67e22; /* Text color */
+  color: #e67e22; /* Carrot Orange */
   font-size: 14px; /* Font size */
   font-weight: bold; /* Bold text */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
