@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background-color: #f4f4f9; /* light shade of gray*/
 }
 
 header {
@@ -121,7 +121,7 @@ header h1 {
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .welcome p {
-   font-size: 15px;
+    font-size: 15px;
   }
 }
 
@@ -384,4 +384,43 @@ header h1 {
   padding: 20px;
   max-width: 1250px;
   margin: 0 auto;
+  margin-top: -50px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #2f4f4f; /* Dark Slate Gray */
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #f2f2f2;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+/* Link styles */
+.footer-content a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 10px 0;
+    font-size: 12px;
+  }
 }
